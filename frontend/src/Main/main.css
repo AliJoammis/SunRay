@@ -1,0 +1,68 @@
+.cardsSectionDiv {
+  display: grid;
+  gap: 12px;
+  margin: 30px;
+  justify-content: center;
+}
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 17%;
+}
+
+.search-bar .MuiTextField-root {
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    margin-left: 0; 
+    justify-content: center;
+  }
+  .search-bar .MuiTextField-root {
+    width: 50%;
+  }
+}
+
+
+.admin-h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+  margin: 15px;
+  gap : 15px
+}
+
+.stack-buttons{
+  margin: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+
+  
+@media (max-width: 599px) {
+  .cardsSectionDiv {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .cardsSectionDiv {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cardsSectionDiv {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}

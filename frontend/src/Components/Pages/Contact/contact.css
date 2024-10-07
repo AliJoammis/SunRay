@@ -1,0 +1,143 @@
+.mainContactDiv{
+  width: 100%;
+  height: 100vh;
+}
+.contact-section {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 5px rgb(249, 247, 247);
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  background-color: #4c4a4a;
+}
+
+.contact-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.contactus-text{
+  font-size: large;
+  color:whitesmoke;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+
+.contact-item:hover {
+  background-color: #f0f0f0;
+}
+
+.contact-name {
+  font-weight: 600;
+  color: #f4f2f2;
+}
+
+.contact-number {
+  font-size: 1.1em;
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-number:hover {
+  color: #004499;
+
+}
+
+.email-address{
+  color:white;
+  margin:10px auto;
+}
+.team-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.github-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-logo {
+  width: 40px;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+
+  transition: transform 0.3s ease;
+}
+
+.github-link:hover .github-logo {
+ 
+  transform: rotate(360deg);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 20px;
+  }
+
+  .team-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}

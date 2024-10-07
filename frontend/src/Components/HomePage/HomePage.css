@@ -1,0 +1,136 @@
+
+.mainHomePageDiv {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    filter: brightness(70%); 
+}
+
+.text-over-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.banner-content {
+    z-index: 1;
+  }
+
+
+.heroSectionDiv {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.welcomeDiv {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    color:white;
+}
+
+.welcomeText {
+    font-size: xx-large !important;
+    border-bottom: 2px solid #fcfcfc;
+    padding-bottom: 5px;
+    animation: slideInFromLeft 1s ease-out;
+    
+}
+
+.homeText {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    animation: fadeIn 2s ease-in-out;
+    color:white;
+}
+
+.loginPath {
+    font-size: large;
+    margin-right: 5px !important;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    margin-bottom: -1px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    animation: slideInFromRight 1s ease-out;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.loginPath:hover {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcomeText, .homeText {
+        font-size: large !important;
+    }
+
+    .loginPath {
+        font-size: medium !important;
+    }
+}

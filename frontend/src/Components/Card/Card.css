@@ -1,0 +1,144 @@
+.main-card{
+  display:flex;
+  flex-direction: column;
+}
+.cardsSectionDiv {
+    display: grid;
+    gap: 12px;
+    margin: 30px;
+    justify-content: center;
+  }
+  .cardTitle{
+    font-size: 1.5rem !important;
+  }
+
+  .cardImg{
+    object-fit:cover;
+    height: 200px;
+  }
+  
+  .pagination-stack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .bottom{
+    margin-bottom: 160px;
+  }
+
+  .stack-filters{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px black;
+    width:1000px;
+    margin:30px auto;
+  }
+
+  .popular-filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 600;
+    gap:5px;
+  }
+
+  .favorite{
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 599px) {
+    .cardsSectionDiv {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .responsive-stack {
+      flex-direction: column !important;
+      width: 250px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .favorite{
+      width:250px;
+    }
+
+  }
+  @media (max-width: 400px) {
+    .cardsSectionDiv {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 899px) {
+    .cardsSectionDiv {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .stack-filters{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: solid 1px black;
+      width:500px;
+      margin:30px auto;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .cardsSectionDiv {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }
+  
+  .card {
+    max-width: 380px;
+    width: 100%;  
+    height: 500px;;  
+  }
+  
+  @media (max-width: 599px) {
+    /* .card {
+      height: 500px;
+      
+    } */
+    .cardTitle{
+      font-size: 1rem !important;
+      margin-left: -10px !important;
+    }
+ 
+  }
+  @media(max-width: 400px) {
+    .card {
+      max-width: 150px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .cardTitle{
+      font-size: 1rem !important;
+      margin-left: -10px !important;
+    }
+    .cardImg{
+      width: 150px;
+    }
+  }
+  .adminUserBtn{
+    background-color: white;
+    border: none;
+  }
+  .adminUserBtn:hover{
+    border-radius: 5px;
+    transform: translateY(-3px);
+    transition: all 0.2s ease-in-out;
+  }
+  .priceDiv{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1976d2;
+    border-radius:5px;
+    font-size: x-large;
+    margin-bottom: 6px;
+  }

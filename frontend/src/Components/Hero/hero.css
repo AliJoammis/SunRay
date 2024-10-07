@@ -1,0 +1,45 @@
+.heroMainDiv {
+    background-image: url('../../../../backend/src/Assets/yhrixebl.png');
+    position: relative;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover 65vh; 
+    filter: brightness(70%);
+    background-color: rgba(0, 0, 0, 0.355);
+  }
+  
+  .heroText {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%; 
+  }
+  
+  .text-container {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    max-width: 450px; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  @media (max-width: 768px) {
+    .text-container {
+      width: 70%;
+      font-size: 0.5em; 
+    }
+    .heroMainDiv{
+        background-size: 100% 30vh;
+        height: 30vh;
+    }
+  }
+  
